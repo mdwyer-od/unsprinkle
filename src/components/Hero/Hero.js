@@ -4,7 +4,11 @@ import styled from 'styled-components/macro';
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
+      <HeroImage
+        src="/images/hero-img.jpg"
+        srcSet="/images/hero-img.jpg,/images/hero-img@2x.jpg 2x,/images/hero-img@2x.avif 2x"
+        alt="Image of a cat"  
+      />
       <Swoop src="/swoop.svg" />
     </Wrapper>
   );
